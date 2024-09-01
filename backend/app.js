@@ -5,10 +5,13 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-app.use(cors({
+const corsOptions = {
   origin: 'https://vendor-market-frontend.vercel.app',
-  credentials: true
-}));
+  methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders: 'Content-Type,Authorization',
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(cookieParser());
@@ -49,14 +52,6 @@ app.use("/api/v2/payment", payment);
 app.use("/api/v2/withdraw", withdraw);
 
 // it's for ErrorHandling
-app.use((req, res, next) => {
-  const allowedOrigin = 'https://vendor-market-frontend.vercel.app';
-  if (req.headers.origin === allowedOrigin) {
-      res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
-  }
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  next();
-});
+app.use(ErrorHandler);
 
 module.exports = app;
