@@ -56,9 +56,9 @@ const Header = ({ activeHeading }) => {
       <div className={`${styles.section}`}>
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
-            <Link to="/">
+            <Link to="">
               <img
-                src="/logo.png"
+                src="https://github.com/trishanu-init/vendor-market/blob/main/frontend/src/Assests/logo.png"
                 alt=""
               />
             </Link>
