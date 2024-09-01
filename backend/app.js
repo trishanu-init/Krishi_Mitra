@@ -49,6 +49,14 @@ app.use("/api/v2/payment", payment);
 app.use("/api/v2/withdraw", withdraw);
 
 // it's for ErrorHandling
-app.use(ErrorHandler);
+app.use((req, res, next) => {
+  const allowedOrigin = 'https://vendor-market-frontend.vercel.app';
+  if (req.headers.origin === allowedOrigin) {
+      res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
 
 module.exports = app;
