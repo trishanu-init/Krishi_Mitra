@@ -5,16 +5,16 @@ export const navItems = [
       url: "/",
     },
     {
+      title: "Disease Analysis",
+      url: "/",
+    },
+    {
       title: "Best Selling",
       url: "/best-selling",
     },
     {
       title: "Products",
       url: "/products",
-    },
-    {
-      title: "Events",
-      url: "/events",
     },
     {
       title: "FAQ",
@@ -215,7 +215,7 @@ export const navItems = [
       title: "Seed",
       subTitle: "",
       image_Url:
-        "https://img.freepik.com/premium-vector/cartoon-bag-seeds-with-blank-sign-vector-hand-drawn-illustration_20412-824.jpg",
+        "https://static.vecteezy.com/system/resources/previews/015/697/074/original/burlap-sack-bag-of-seeds-cute-cartoon-illustration-gardening-farming-agriculture-clipart-vector.jpg",
     },
     {
       id: 5,

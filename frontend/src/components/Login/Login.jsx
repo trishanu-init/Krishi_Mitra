@@ -37,6 +37,11 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
+          <img
+          src="/logo_login.png"
+          alt="logo_login"
+          className="mx-auto h-1/3 w-1/3"
+        />
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Login to your account
         </h2>
@@ -128,7 +133,7 @@ const Login = () => {
               </button>
             </div>
             <div className={`${styles.noramlFlex} w-full`}>
-              <h4>Not have any account?</h4>
+              <h4>Don't have an account?</h4>
               <Link to="/sign-up" className="text-blue-600 pl-2">
                 Sign Up
               </Link>

@@ -92,7 +92,8 @@ const Footer = () => {
          text-center pt-2 text-gray-400 text-sm pb-8"
       >
         <span>© 2024 Krishi Mitra. All rights reserved.</span>
-        <span>Terms · Privacy Policy</span>
+        <span>Terms & Conditions· Privacy Policy</span>
+        <span>SIH 2024 Submission</span>
       </div>
     </div>
   );

@@ -46,6 +46,11 @@ const Singup = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
+      <img
+          src="/logo_login.png"
+          alt="logo_login"
+          className="mx-auto h-1/3 w-1/3"
+        />
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Register as a new user
         </h2>
@@ -147,7 +152,7 @@ const Singup = () => {
                   htmlFor="file-input"
                   className="ml-5 flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                 >
-                  <span>Upload a file</span>
+                  <span>Upload Profile Photo</span>
                   <input
                     type="file"
                     name="avatar"
