@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '';
 import {
   AiFillFacebook,
   AiFillInstagram,
