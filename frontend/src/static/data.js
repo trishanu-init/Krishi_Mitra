@@ -191,72 +191,38 @@ export const navItems = [
   export const categoriesData = [
     {
       id: 1,
-      title: "Computers and Laptops",
+      title: "Fresh Produce",
       subTitle: "",
       image_Url:
-        "https://cdn.shopify.com/s/files/1/1706/9177/products/NEWAppleMacbookProwithM1ProChip14InchLaptop2021ModelMKGQ3LL_A_16GB_1TBSSD_custommacbd.jpg?v=1659592838",
+        "https://media.istockphoto.com/id/522835195/photo/shopping-basket.jpg?s=612x612&w=0&k=20&c=DB8HhSruy6wkUprm3n5g1ul4-bBRy3EL8rkAuCbBIWE=",
     },
     {
       id: 2,
-      title: "cosmetics and body care",
+      title: "Fertilizer",
       subTitle: "",
       image_Url:
-        "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-07/kosme1.png",
+        "https://img.freepik.com/premium-vector/vektor-illustration-fertilizer-bag-rice-sack-sand-bag-agriculture-product-isolated_734922-11.jpg",
     },
     {
       id: 3,
-      title: "Accesories",
+      title: "Equipment",
       subTitle: "",
       image_Url:
-        "https://img.freepik.com/free-vector/ordering-goods-online-internet-store-online-shopping-niche-e-commerce-website-mother-buying-babies-clothes-footwear-toys-infant-accessories_335657-2345.jpg?w=2000",
+        "https://img.freepik.com/free-vector/orange-metal-wheelbarrow-gardener-farmer-3d-illustration-drawing-equipment-fresh-vegetables-crops-3d-style-white-background-farming-gardening-cultivation-harvest-concept_778687-682.jpg",
     },
     {
       id: 4,
-      title: "Cloths",
+      title: "Seed",
       subTitle: "",
       image_Url:
-        "https://www.shift4shop.com/2015/images/industries/clothing/clothing-apparel.png",
+        "https://img.freepik.com/premium-vector/cartoon-bag-seeds-with-blank-sign-vector-hand-drawn-illustration_20412-824.jpg",
     },
     {
       id: 5,
-      title: "Shoes",
-      subTitle: "",
-      image_Url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBQPQMVNRd6TtDkGs2dCri0Y-rxKkFOiEWw&usqp=CAU",
-    },
-    {
-      id: 6,
-      title: "Gifts",
-      subTitle: "",
-      image_Url:
-        "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
-    },
-    {
-      id: 7,
-      title: "Pet Care",
-      subTitle: "",
-      image_Url: "https://cdn.openpr.com/T/c/Tc15444071_g.jpg",
-    },
-    {
-      id: 8,
-      title: "Mobile and Tablets",
-      subTitle: "",
-      image_Url:
-        "https://st-troy.mncdn.com/mnresize/1500/1500/Content/media/ProductImg/original/mpwp3tua-apple-iphone-14-256gb-mavi-mpwp3tua-637986832343472449.jpg",
-    },
-    {
-      id: 9,
-      title: "Music and Gaming",
-      subTitle: "",
-      image_Url:
-        "https://static.vecteezy.com/system/resources/previews/011/996/555/original/3d-black-headphone-illustration-ecommerce-icon-png.png",
-    },
-    {
-      id: 10,
       title: "Others",
       subTitle: "",
       image_Url:
-        "https://searchspring.com/wp-content/uploads/2022/10/Hero-Image-Platform-Others-2.png",
+        "https://thumbs.dreamstime.com/b/worker-pushing-wheelbarrow-garden-tools-farm-equipment-worker-pushing-wheelbarrow-garden-tools-farm-equipment-isolated-329343747.jpg",
     },
   ];
   
@@ -613,16 +579,16 @@ export const navItems = [
   
   export const footercompanyLinks = [
     {
-      name: "Game & Video",
+      name: "Fresh Produce",
     },
     {
-      name: "Phone &Tablets",
+      name: "Equipment",
     },
     {
-      name: "Computers & Laptop",
+      name: "Fertilizer",
     },
     {
-      name: "Sport Watches",
+      name: "Seed",
     },
     {
       name: "Events",
