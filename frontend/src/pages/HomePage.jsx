@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from "../components/Layout/Header";
+import Carousel from '../Carousel';
 import Hero from "../components/Route/Hero/Hero";
 import Categories from "../components/Route/Categories/Categories";
 import BestDeals from "../components/Route/BestDeals/BestDeals";
@@ -11,6 +12,7 @@ const HomePage = () => {
     <div>
         <Header activeHeading={1} />
         <Hero />
+        <Carousel/>
         <Categories />
         <BestDeals />
         <FeaturedProduct />

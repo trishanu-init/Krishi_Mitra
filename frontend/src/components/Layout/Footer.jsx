@@ -14,6 +14,7 @@ import {
 
 const Footer = () => {
   return (
+    <footer className="hidden md:block">
     <div className="bg-[#000] text-white">
       <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 sm:text-center">
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
@@ -96,6 +97,7 @@ const Footer = () => {
         <span>SIH 2024 Submission</span>
       </div>
     </div>
+    </footer>
   );
 };
 

@@ -4,6 +4,7 @@ import styles from "../../../styles/styles";
 
 const Hero = () => {
   return (
+    <hero className="hidden md:block">
     <div
       className={`relative min-h-[70vh] 800px:min-h-[80vh] w-full bg-no-repeat ${styles.noramlFlex}`}
       style={{
@@ -17,7 +18,7 @@ const Hero = () => {
         >
           Get Fresh, Local Produce <br /> Straight from Farmers
         </h1>
-        <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#000000ba]">
+        <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#020101ba]">
         Empower Your Harvest: Sell Fresh, Buy Smart. <br /> Get the Best Tools and Fertilizers, Plus Plant Disease Detection.<br />
         Revolutionize Your Farm with the Platform Built for Farmers
         </p>
@@ -29,7 +30,7 @@ const Hero = () => {
             </div>
         </Link>
         <Link to="/" className="inline-block">
-            <div className={`${styles.button_d} mb-4`}>
+            <div className={`${styles.button_d} mt-5 mb-4`}>
                  <span className="text-[#fff] font-[Poppins] text-[18px]">
                     Disease Analysis
                  </span>
@@ -37,6 +38,7 @@ const Hero = () => {
         </Link>
       </div>
     </div>
+    </hero>
   );
 };
 
