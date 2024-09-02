@@ -58,7 +58,7 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="">
               <img
-                src="https://github.com/trishanu-init/vendor-market/blob/main/frontend/src/Assests/logo.png"
+                src="https://drive.google.com/drive-viewer/AKGpihb3TyOnP07vrnQgSpNI_GAXIvYNWDwqxJu6ZVThc-y_JJVj6-Snp7s2yk8uq80j_QfjIOmibsJ33pLXxRPdb_L9H1thQ6iI9g=s2560"
                 alt=""
               />
             </Link>
@@ -217,7 +217,7 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                src="https://drive.google.com/drive-viewer/AKGpihb3TyOnP07vrnQgSpNI_GAXIvYNWDwqxJu6ZVThc-y_JJVj6-Snp7s2yk8uq80j_QfjIOmibsJ33pLXxRPdb_L9H1thQ6iI9g=s2560"
                 alt=""
                 className="mt-3 cursor-pointer"
               />
