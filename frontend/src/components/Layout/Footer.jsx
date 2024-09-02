@@ -18,8 +18,8 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 sm:text-center">
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-            alt=""
+            src="/logo_bw.png"
+            alt="logo_bw"
             style={{ filter: "brightness(0) invert(1)" }}
           />
           <br />
@@ -42,7 +42,7 @@ const Footer = () => {
         </ul>
 
         <ul className="text-center sm:text-start">
-          <h1 className="mb-1 font-semibold">Company</h1>
+          <h1 className="mb-1 font-semibold">Navigation</h1>
           {footerProductLinks.map((link,index) => (
             <li key={index}>
               <Link

@@ -27,7 +27,7 @@ export const navItems = [
     {
       id: 1,
       title: "Free Shipping",
-      Description: "From all orders over 100$",
+      Description: "From all orders over ₹1000",
       icon: (
         <svg
           width="36"
@@ -76,8 +76,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Daily Surprise Offers",
-      Description: "Save up to 25% off",
+      title: "Local Produce",
+      Description: "Get Fresh Farm Goods",
       icon: (
         <svg
           width="32"
@@ -105,7 +105,7 @@ export const navItems = [
     {
       id: 4,
       title: "Affortable Prices",
-      Description: "Get Factory direct price",
+      Description: "Purchase directly from Farmers",
       icon: (
         <svg
           width="32"
@@ -152,7 +152,7 @@ export const navItems = [
     {
       id: 5,
       title: "Secure Payments",
-      Description: "100% protected payments",
+      Description: "100% Protected Payments",
       icon: (
         <svg
           width="32"
@@ -563,14 +563,15 @@ export const navItems = [
       link: "/about"
     },
     {
-      name: "Careers",
+      name: "Home",
       link: "/carrers"
     },
     {
-      name: "Store Locations",
+      name: "Seller",
     },
     {
-      name: "Our Blog",
+      name: "Prediction",
+      link:"/events",
     },
     {
       name: "Reviews",
@@ -598,6 +599,7 @@ export const navItems = [
   export const footerSupportLinks = [
     {
       name: "FAQ",
+      links: "/faq",
     },
     {
       name: "Reviews",
