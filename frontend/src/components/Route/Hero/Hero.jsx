@@ -22,9 +22,16 @@ const Hero = () => {
         Revolutionize Your Farm with the Platform Built for Farmers
         </p>
         <Link to="/products" className="inline-block">
-            <div className={`${styles.button} mt-5`}>
+            <div className={`${styles.button} mt-5 mb-4 mr-4`}>
                  <span className="text-[#fff] font-[Poppins] text-[18px]">
                     Shop Now
+                 </span>
+            </div>
+        </Link>
+        <Link to="/" className="inline-block">
+            <div className={`${styles.button_d} mb-4`}>
+                 <span className="text-[#fff] font-[Poppins] text-[18px]">
+                    Disease Analysis
                  </span>
             </div>
         </Link>
