@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import run from './ans';
+import run from '../ans';
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import styles from "../styles/styles";
