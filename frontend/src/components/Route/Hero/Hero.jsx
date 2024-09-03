@@ -29,7 +29,7 @@ const Hero = () => {
                  </span>
             </div>
         </Link>
-        <Link to="/" className="inline-block">
+        <Link to="/predict" className="inline-block">
             <div className={`${styles.button_d} mt-5 mb-4`}>
                  <span className="text-[#fff] font-[Poppins] text-[18px]">
                     Disease Analysis

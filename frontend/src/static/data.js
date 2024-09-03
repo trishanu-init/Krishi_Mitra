@@ -6,7 +6,7 @@ export const navItems = [
     },
     {
       title: "Disease Analysis",
-      url: "",
+      url: "/predict",
     },
     {
       title: "Best Selling",
@@ -243,7 +243,7 @@ export const navItems = [
     },
     {
       name: "Prediction",
-      link:"/events",
+      link:"/predict",
     },
     {
       name: "Reviews",
