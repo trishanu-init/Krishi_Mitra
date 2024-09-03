@@ -14,4 +14,4 @@ async function run() {
   return text; // Return the text to be used in TypeScript
 }
 
-module.exports = run;
+export default run;
