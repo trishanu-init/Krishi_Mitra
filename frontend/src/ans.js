@@ -3,7 +3,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 // Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI("AIzaSyBSd6wvgH3elg7tvspk8onVU1BfnyrjU24");
 
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro"});
 
 async function run() {
   const prompt = "Write about Pepper__bell___Bacterial_spot in 3 lines, suggest treatment give your answers in hindi";

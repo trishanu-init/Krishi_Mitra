@@ -85,7 +85,7 @@ const Predict = () => {
             {selectedImage ? (
               <img src={selectedImage} alt="Selected" className="rounded-lg max-w-full max-h-full shadow-md" />
             ) : (
-              <span className="text-green-700">No image selected</span>
+              <span className="text-green-700">No Image Selected</span>
             )}
           </div>
           <button
@@ -110,9 +110,19 @@ const Predict = () => {
           )}
   
           {loading && (
-            <div className="mt-10 p-4 bg-green-100 rounded-lg shadow-md w-full h-full text-center">
-              <p className="text-green-700">Analyzing your image. Please wait...</p>
-              <img src="/handsplant.png" />
+            < div className="mt-10 p-4 bg-green-100 rounded-lg shadow-md w-full h-full text-center">
+              <p className="text-green-700">Analyzing your Image. Please wait...</p>
+              <div className="flex items-center justify-center">
+              <iframe
+                  src="https://lottie.host/embed/9fb64850-84eb-4cb3-8ab1-b623f2520aec/RIQU4wm0Rc.json"
+                  width="300"
+                  height="300">
+                  {/* Fallback content if iframe is not supported */}
+                  <img
+                src="/handsplant.png"
+                className="w-full h-full opacity-40 mt-20"/>
+                </iframe>
+                </div>
             </div>
           )}
   
