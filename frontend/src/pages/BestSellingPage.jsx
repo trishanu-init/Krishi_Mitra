@@ -24,7 +24,7 @@ const BestSellingPage = () => {
       <Loader />
     ) : (
       <div>
-      <Header activeHeading={2} />
+      <Header activeHeading={3} />
       <br />
       <br />
       <div className={`${styles.section}`}>

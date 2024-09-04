@@ -58,7 +58,7 @@ const Predict = () => {
       setDiseaseResult(result.result);
 
       // Fetch GPT content
-      const content = await run();
+      const content = await run(diseaseResult);
       setGptResponse(content);
 
     } catch (error) {
