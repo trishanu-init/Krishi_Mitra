@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI("AIzaSyBSd6wvgH3elg7tvspk8onVU1BfnyrjU24");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro"});
 
 async function run() {
-  const prompt = "Write about Tomato_Early_Blight in 3 lines, suggest treatment give your answers in hindi";
+  const prompt = "Write about Tomato_Early_Blight in 3 lines, suggest treatment give your answers in english";
 
   const result = await model.generateContent(prompt);
   const response = await result.response;
