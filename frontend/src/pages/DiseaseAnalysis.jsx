@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import run from '../ans';
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
-import styles from "../styles/styles";
 
 const DiseaseAnalysis = () => {
   return (
@@ -25,11 +23,24 @@ const Predict = () => {
     }
   };
 
+  const { GoogleGenerativeAI } = require("@google/generative-ai");
+
+  const genAI = new GoogleGenerativeAI("AIzaSyBSd6wvgH3elg7tvspk8onVU1BfnyrjU24");
+
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro"});
+
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const [loading, setLoading] = useState(false);
   const [diseaseResult, setDiseaseResult] = useState(null);
   const [gptResponse, setGptResponse] = useState(null);
+
+  const [selectedLanguage, setSelectedLanguage] = useState('en'); // Default to English
+
+  const handleLanguageChange = (e) => {
+    setSelectedLanguage(e.target.value);
+  };
+
 
   const handleImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
@@ -58,7 +69,11 @@ const Predict = () => {
       setDiseaseResult(result.result);
 
       // Fetch GPT content
-      const content = await run(diseaseResult);
+      const prompt = `Write about ${diseaseResult} in 3 lines, suggest treatment give your answers in ${selectedLanguage}`;
+    
+      const output = await model.generateContent(prompt);
+      const respo = await output.response;
+      const content = await respo.text();
       setGptResponse(content);
 
     } catch (error) {
@@ -75,6 +90,24 @@ const Predict = () => {
         {/* Top/Left side: Image input */}
         <div className="flex flex-col items-center w-full md:w-1/2 md:pr-4 mb-4 md:mb-0">
           <h2 className="text-3xl font-bold mb-4 text-center text-green-800">Upload an Image</h2>
+  
+          {/* Language Selector Dropdown */}
+          <label htmlFor="language" className="block text-sm font-medium text-gray-700 mb-2">
+            Select Language
+          </label>
+          <select
+            id="language"
+            value={selectedLanguage}
+            onChange={handleLanguageChange}
+            className="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm mb-4"
+          >
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="kannada">Kannada</option>
+            <option value="bengali">Bengali</option>
+            {/* Add more languages as needed */}
+          </select>
+  
           <input
             type="file"
             accept="image/*"
@@ -110,19 +143,19 @@ const Predict = () => {
           )}
   
           {loading && (
-            < div className="mt-10 p-4 bg-green-100 rounded-lg shadow-md w-full h-full text-center">
+            <div className="mt-10 p-4 bg-green-100 rounded-lg shadow-md w-full h-full text-center">
               <p className="text-green-700">Analyzing your Image. Please wait...</p>
               <div className="flex items-center justify-center">
-              <iframe
+                <iframe
                   src="https://lottie.host/embed/9fb64850-84eb-4cb3-8ab1-b623f2520aec/RIQU4wm0Rc.json"
                   width="300"
                   height="300">
                   {/* Fallback content if iframe is not supported */}
                   <img
-                src="/handsplant.png"
-                className="w-full h-full opacity-40 mt-20"/>
+                    src="/handsplant.png"
+                    className="w-full h-full opacity-40 mt-20"/>
                 </iframe>
-                </div>
+              </div>
             </div>
           )}
   
@@ -141,7 +174,7 @@ const Predict = () => {
         </div>
       </div>
     </div>
-  );
+  );  
   
 };
 
