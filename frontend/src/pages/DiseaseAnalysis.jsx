@@ -102,10 +102,16 @@ const Predict = () => {
             className="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm mb-4"
           >
             <option value="english">English</option>
-            <option value="hindi">Hindi</option>
-            <option value="kannada">Kannada</option>
-            <option value="bengali">Bengali</option>
-            {/* Add more languages as needed */}
+            <option value="hindi">Hindi-हिन्दी</option>
+            <option value="kannada">Kannada-ಕನ್ನಡ</option>
+            <option value="bengali">Bengali-বাংলা</option>
+            <option value="gujarati">Gujarati-ગુજરાતી</option>
+            <option value="malayalam">Malayalam-മലയാളം</option>
+            <option value="marathi">Marathi-मराठी</option>
+            <option value="nepali">Nepali-नेपाली</option>
+            <option value="punjabi">Punjabi-ਪੰਜਾਬੀ</option>
+            <option value="tamil">Tamil-தமிழ்</option>
+            <option value="telugu">Telugu-తెలుగు</option>
           </select>
   
           <input
