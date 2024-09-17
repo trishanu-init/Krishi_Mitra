@@ -2,9 +2,11 @@
 
 Krishi Mitra is a comprehensive platform designed to empower farmers by providing them direct access to consumers and sellers, eliminating the need for intermediaries. With flexible credit limits and real-time support via a community forum, the platform promotes sustainable farming practices, such as organic farming and carbon credit earning.
 
-### Key features include:
+## Key features include:
 
-**AI-Driven Disease Detection:** Utilizes deep learning to identify crop diseases from images and recommend appropriate treatments.
+**AI-Driven Disease Detection:**
+
+ Utilizes deep learning to identify crop diseases from images and recommend appropriate treatments.
 
 **Real-Time Disease Prediction:** Integrates weather data to predict disease outbreaks before they occur, helping farmers take preventive measures.
 
