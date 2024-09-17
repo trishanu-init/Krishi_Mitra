@@ -4,9 +4,7 @@ Krishi Mitra is a comprehensive platform designed to empower farmers by providin
 
 ## Key features include:
 
-**AI-Driven Disease Detection:**
-
- Utilizes deep learning to identify crop diseases from images and recommend appropriate treatments.
+**AI-Driven Disease Detection:** Utilizes deep learning to identify crop diseases from images and recommend appropriate treatments.
 
 **Real-Time Disease Prediction:** Integrates weather data to predict disease outbreaks before they occur, helping farmers take preventive measures.
 
