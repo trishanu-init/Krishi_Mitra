@@ -20,6 +20,10 @@ Krishi Mitra is a comprehensive platform designed to empower farmers by providin
 
 **WhatsApp Chatbot Integration:** Includes an AI-powered chatbot integrated with WhatsApp for familiar, seamless communication, including voice support.
 
+### **Krishi Mitra Walkthrough:** Click on below image
+
+[![Krishi Mitra Walkthrough](https://img.youtube.com/vi/yrlfeAX3rMI/maxresdefault.jpg)](https://youtu.be/yrlfeAX3rMI)
+
 # Tech Stack
 
 ## Frontend
