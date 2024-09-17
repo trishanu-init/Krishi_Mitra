@@ -112,6 +112,7 @@ const Predict = () => {
             <option value="punjabi">Punjabi-ਪੰਜਾਬੀ</option>
             <option value="tamil">Tamil-தமிழ்</option>
             <option value="telugu">Telugu-తెలుగు</option>
+            <option value="odia">Odia</option>
           </select>
   
           <input
